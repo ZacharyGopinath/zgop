@@ -71,13 +71,6 @@
 
     </div>
 
-
-    <div id=' copyrightContainer'>
-        <div class='copyrightContainerText'>
-            <p id='copyrightText'></p>
-        </div>
-    </div>
-
     <!-- jQuery, Bootstrap Bundle (includes Popper) and Material -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin></script>
@@ -85,13 +78,6 @@
         integrity="sha256-jXCJJT3KKcnNjZ3rfsabCj1EX4j2omR4xxm+H5CtywE=" crossorigin></script>
     <script src="https://cdn.jsdelivr.net/gh/djibe/material@4.5.3-rc3/js/material.min.js" crossorigin async></script>
     <script src="./src/index.js"></script>
-    <script>
-        window.onload = () => {
-            const currentYear = new Date().getFullYear()
-            const location = document.getElementById('copyrightText');
-            location.textContent = 'Copyright © Zachary Gopinath ' + currentYear;
-        }
-    </script>
 </body>
 
 </html>

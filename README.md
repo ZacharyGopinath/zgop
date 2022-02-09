@@ -1,4 +1,4 @@
-# zgop
+# https://zacharygopinath.github.io/zgop/
 ## A personal website, including links to my:
 * 💾[GitHub](https://github.com/ZacharyGopinath),
 * 📷[Instagram](https://www.instagram.com/zgop416/),

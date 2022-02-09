@@ -248,22 +248,3 @@ h2 {
     margin-right: 5px;
     margin-left: 2px;
 }
-
-#copyrightContainer {
-    position: fixed;
-    left: 50%;
-    bottom: 0.2rem;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-}
-
-.copyrightContainerText {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    color: var(--text-light);
-}
-
-#copyrightText {
-    font-size: auto;
-}
