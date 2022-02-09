@@ -4,22 +4,249 @@
     --lavender: #D4C2FC;
     --magenta: #F15BB5;
     --blue: #2D7DD2;
+    --ruby: #A31621;
     color: var(--lavender) !important;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 body {
+    transition: 0.2s;
     background-color: var(--text-dark);
     margin: 0 auto;
+    overflow: hidden;
+    -webkit-animation: fadein 3s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 3s;
+    /* Internet Explorer */
+    -o-animation: fadein 3s;
+    /* Opera < 12.1 */
+    animation: fadein 3s;
+}
 
+.photoAndLinks {
+    display: flex;
+    margin-top: 5px;
+
+}
+
+.nameAndLinks {
+    display: block;
+}
+
+.titleName {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github,
+.instagram,
+.resume,
+.spotify,
+.location {
+    display: flex;
+    margin-bottom: 10%;
+    margin-left: 20px;
+}
+
+.github,
+.instagram,
+.resume,
+.spotify,
+.location>h2,
+i {
+    display: flex;
+    margin-right: 10px;
+
+}
+
+a {
+    display: flex;
+    text-decoration: none !important;
+    color: var(--text-light);
+    text-decoration: none;
+    overflow: hidden;
+    background: linear-gradient(to right, #E84855, #E84855 50%, var(--lavender) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+}
+
+a:hover {
+    background-position: 0 100%;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+.titleName>a {
+    display: flex;
+    text-decoration: none !important;
+    color: var(--text-light);
+    text-decoration: none;
+    overflow: hidden;
+    background: var(--ruby);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    text-decoration: none;
+}
+
+.github>a {
+    display: flex;
+    text-decoration: none !important;
+    color: var(--text-light);
+    text-decoration: none;
+    overflow: hidden;
+    background: linear-gradient(to right, #7010a3, #7010a3 50%, var(--lavender) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+}
+
+.github>a:hover {
+    background-position: 0 100%;
+}
+
+.instagram>a {
+    display: flex;
+    text-decoration: none !important;
+    color: var(--text-light);
+    text-decoration: none;
+    overflow: hidden;
+    background: linear-gradient(to right, #DD2A7B, #DD2A7B 50%, var(--lavender) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+}
+
+.instagram>a:hover {
+    background-position: 0 100%;
+}
+
+.resume>a {
+    display: flex;
+    text-decoration: none !important;
+    color: var(--text-light);
+    text-decoration: none;
+    overflow: hidden;
+    background: linear-gradient(to right, var(--blue), var(--blue) 50%, var(--lavender) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+}
+
+.resume>a:hover {
+    background-position: 0 100%;
+}
+
+.spotify>a {
+    display: flex;
+    text-decoration: none !important;
+    color: var(--text-light);
+    text-decoration: none;
+    overflow: hidden;
+    background: linear-gradient(to right, #1DB954, #1DB954 50%, var(--lavender) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+}
+
+.spotify>a:hover {
+    background-position: 0 100%;
 }
 
 h1 {
+    font-weight: 400;
+    color: #E84855 !important;
+    margin-bottom: 10px;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: var(--lavender);
+}
+
+h2 {
     color: var(--lavender) !important;
 }
 
-.strokeText {
-    -webkit-text-stroke-width: 1px;
+.strokeTextLavender {
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--lavender);
+}
+
+#myPhoto {
+    height: 33%;
+    width: 33%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 2px;
 }
 
 #copyrightContainer {
