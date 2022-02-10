@@ -68,6 +68,49 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+
+    html,
+    body {
+        overflow: hidden;
+        text-align: center !important;
+    }
+
+    .nameAndLinks {
+        width: 100%;
+    }
+
+    h2 {
+        color: var(--lavender);
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 2;
+    }
+
+    i {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        color: var(--magenta);
+        text-align: center;
+
+    }
+
+    .titleName {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .titleContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     .photoAndLinks {
         display: block;
     }
