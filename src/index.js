@@ -1,5 +1,4 @@
-console.log('hi')
-
+window.screen.width >= 676 ? document.getElementById('imageLink').style.visibility = 'hidden' : null;
 $(function () {
     const awayMsg = "HEY👋";
     let original;

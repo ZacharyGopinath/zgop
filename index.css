@@ -67,6 +67,20 @@ body {
     animation: fadein 3s;
 }
 
+@media only screen and (max-width: 767px) {
+    .photoAndLinks {
+        display: block;
+    }
+
+    #myPhoto {
+        display: none;
+    }
+
+    .image {
+        visibility: visible;
+    }
+}
+
 .photoAndLinks {
     display: flex;
     margin-top: 5px;
@@ -87,7 +101,8 @@ body {
 .instagram,
 .resume,
 .spotify,
-.location {
+.location,
+.image {
     display: flex;
     margin-bottom: 10%;
     margin-left: 20px;
@@ -97,7 +112,8 @@ body {
 .instagram,
 .resume,
 .spotify,
-.location>h2,
+.location,
+.image>h2,
 i {
     display: flex;
     margin-right: 10px;
@@ -134,7 +150,7 @@ a:hover::before {
     color: var(--text-light);
     text-decoration: none;
     overflow: hidden;
-    background: var(--ruby);
+    background: var(--magenta);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -233,11 +249,6 @@ h1 {
 
 h2 {
     color: var(--lavender) !important;
-}
-
-.strokeTextLavender {
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: var(--lavender);
 }
 
 #myPhoto {
