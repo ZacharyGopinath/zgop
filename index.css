@@ -81,6 +81,7 @@ body {
     }
 
     h2 {
+        visibility: visible;
         color: var(--lavender);
         font-size: 1.5rem;
         text-align: center;
@@ -92,6 +93,7 @@ body {
     }
 
     h1 {
+        visibility: visible;
         font-size: 2.5rem;
         color: var(--magenta);
         text-align: center;
