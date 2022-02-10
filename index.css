@@ -65,6 +65,8 @@ body {
     -o-animation: fadein 3s;
     /* Opera < 12.1 */
     animation: fadein 3s;
+    display: flex;
+    margin-top: 5px;
 }
 
 @media only screen and (max-width: 767px) {
