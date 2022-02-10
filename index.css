@@ -71,7 +71,7 @@ body {
 
     html,
     body {
-        overflow: hidden;
+        overflow-x: hidden;
         text-align: center !important;
         background-color: #444545;
     }
@@ -80,10 +80,14 @@ body {
         width: 100%;
     }
 
-    h2 {
-        visibility: visible;
+    .github,
+    .instagram,
+    .resume,
+    .spotify,
+    .location,
+    .image {
         color: var(--lavender);
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: center;
         line-height: 2;
     }
@@ -141,6 +145,10 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+
+.linksAndLogos {
+    font-size: 4rem;
 }
 
 .github,
