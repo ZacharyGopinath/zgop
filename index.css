@@ -162,18 +162,7 @@ body {
     display: flex;
     margin-bottom: 10%;
     margin-left: 20px;
-}
-
-.github,
-.instagram,
-.resume,
-.spotify,
-.location,
-.image>h2,
-i {
-    display: flex;
-    margin-right: 10px;
-
+    line-height: 0.9em;
 }
 
 a {
